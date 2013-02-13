@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 Photos
+  p Express stock photo application
+  #photos
+    for photo in photos
+      .photo
+        h2 = photo.name
+        img(src='/photos/#{photo.path}')
+    include ../pager

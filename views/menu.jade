@@ -1,0 +1,9 @@
+if locals.user
+  #menu
+    span.name= user.name
+    a(href='/upload') upload
+    a(href='/logout') logout
+else
+  #menu
+    a(href='/login') login
+    a(href='/register') register
